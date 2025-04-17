@@ -1,0 +1,259 @@
+body {
+	background-color: grey;
+	margin: 0%;
+}
+
+@font-face {
+	font-family: "Oswald";
+	src: url(../font/Oswald-VariableFont_wght.ttf);
+}
+
+header {
+	top : 0;
+	background-color: black;
+	
+}
+
+*{
+	box-sizing: border-box;
+}
+
+#headercontainer{
+	display: flex;
+	flex-direction: column;
+}
+
+#logocontainer {
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+	background-color: rgb(48, 48, 48);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+
+nav ul {
+	list-style-type: none;
+	display :flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	font-size: x-large;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-family: "Oswald";
+}
+
+nav li {
+	transition: 0.3s;
+	padding: 0;
+	margin: 0;
+}
+
+nav li:hover {
+	scale: 1.2;
+}
+
+#recherche {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3% 0;
+}
+
+#recherche p {
+	font-family: "Oswald";
+	color: white;
+	font-size: larger;
+	text-align: center;
+}
+
+
+
+#textarea input{
+	height: 100%;
+}
+
+#rechercheInput{
+	all: unset;
+	padding: 10px;
+	border-radius: 99999999px;
+	background-color: white;
+	border: 2px solid black;
+	transition: 0.3s;
+	font-family: "Oswald";
+	width: 25%;
+
+}
+
+#rechercheInput:hover {
+	transform: scale(1.1);
+}
+
+
+.activitesItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	height: 300px;
+	width: 30%;
+	margin-bottom: 40px;
+}
+
+.activitesBox {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+
+#chiffre {
+	text-decoration: underline;
+	color: black;
+}
+
+.textcard {
+	font-family: "Oswald";
+	font-size: 30px;
+	position: absolute;
+	color: white;
+	opacity: 0;
+	z-index: 2;
+	text-align: center;
+	width: 100%;
+}
+
+.activitesItem:hover .textcard {
+	opacity: 1;
+}
+
+.activitesItem:hover .flou {
+	opacity: 1;
+}
+
+.activitesItem:hover {
+    transform: scale(1.1);
+}
+
+.flou {
+	height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    filter: brightness(75%);
+    border-radius: 20px;
+}
+
+
+h3 {
+	color: white;
+	font-family: "Oswald";
+	margin-left: 10%;
+}
+
+html {
+	scroll-behavior: smooth;
+
+}
+
+footer {
+	width: 100%;
+	color: white;
+	background-color: rgb(48, 48, 48);
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+ul {
+	padding: 0;
+}
+
+footer li:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+li {
+	margin-left: 20px;
+	list-style: none;
+	margin-top: 15px;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+	font-family: "Oswald";
+}
+
+.goup {
+	font-size: 38px;
+	background-color: white;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.goup:hover {
+	transform: scale(1.2) rotate(360deg);
+}
+
+@media screen and (max-width: 1280px) {
+	.activitesItem{
+		width: 40%;
+	}
+
+	#rechercheInput{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.activitesItem {
+		width: 90%;
+	}
+
+	#rechercheInput{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	footer {
+		flex-direction: column;
+	}
+
+	nav ul{
+		font-size: larger;
+	}
+}

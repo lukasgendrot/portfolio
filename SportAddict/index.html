@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Sport Addict - Le sport à tous les niveaux</title>
+        <style>
+            #logocontainer img {
+                transition: transform 0.3s ease;
+            }
+            #logocontainer img:hover {
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="headercontainer">
+                <div id="logocontainer">
+                    <a href="../projet.html">
+                        <img src="images/logo/SportAddict.png" alt="Logo de Sport Addict">
+                    </a>
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="#class1">Idée d'activité</a></li>
+                    <li><a href="#class2">Les événements à venir</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header> 
+        
+        <div id="recherche">
+            <div id="paragraphe1">
+                <p>Trouvez le sport qui vous correspond en plein centre ville ou en pleine nature</p>
+            </div>
+            <input type="text" id="rechercheInput" placeholder="Rechercher">
+            <div id="paragraphe2">
+                <p>Plus de <span id="chiffre">3500</span> sportifs nous ont déjà rejoints</p>
+            </div>
+        </div>
+
+        <h3 id="class1">Idée d'activité :</h3>
+        <div class="activitesBox">
+			<div class="activitesItem" style="background-image: url('images/activites/basketball.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">Le basket : Gérer le rebond</p>
+			</div>
+			<div class="activitesItem"  style="background-image: url('images/activites/boxe.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">La boxe : Mouvement de jambes et crochet du droit</p>
+			</div>
+			<div class="activitesItem"  style="background-image: url('images/activites/crossfit.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">Le crossfit : Pour devenir un athlète complet</p>
+			</div>
+			<div class="activitesItem"  style="background-image: url('images/activites/fitness.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">Le fitness : Harmoniser son corps</p>
+			</div>
+			<div class="activitesItem"  style="background-image: url('images/activites/karaté.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">Le karaté : Les katas pour éviter la cata</p>
+			</div>
+			<div class="activitesItem"  style="background-image: url('images/activites/musculation.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">La musculation : Aussi puissant qu'harmonieux</p>
+			</div>
+        </div>
+
+        <h3>Les plus populaires :</h3>
+        <div class="activitesBox">        
+            <div class="activitesItem"  style="background-image: url('images/populaire/running.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">La course à pied : Une paire de basket et à nous les grands espaces</p>
+			</div>
+            <div class="activitesItem"  style="background-image: url('images/populaire/yoga.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">Le yoga : Calme, méditation et musculation interne</p>
+			</div>
+            <div class="activitesItem"  style="background-image: url('images/populaire/natation.jpg');">
+                <div class="flou"></div>
+                <p class="textcard">La natation : Force et justesse du mouvement</p>
+			</div>
+        </div>
+
+        <h3 id="class2">Les événements à venir :</h3>
+        <div class="activitesBox">
+            <div class="activitesItem"  style="background-image: url('images/evenement/canoe.jpg');">
+                <div class="flou"></div>    
+                <p class="textcard">Descente des chutes éternelles</p>
+            </div>
+            <div class="activitesItem"  style="background-image: url('images/evenement/football.jpg');">
+                <div class="flou"></div>    
+                <p class="textcard">Recrutement des nouveaux joueurs</p>
+            </div>
+            <div class="activitesItem"  style="background-image: url('images/evenement/motocross.jpg');">    
+                <div class="flou"></div>
+                <p class="textcard">Enduro de la veille de l'automne</p>
+            </div>
+            <div class="activitesItem"  style="background-image: url('images/evenement/plancheAvoile.jpg');">    
+                <div class="flou"></div>
+                <p class="textcard">Exhibition intercontinentale des masters Pro</p>
+            </div>
+            <div class="activitesItem"  style="background-image: url('images/evenement/plongée.jpg');">    
+                <div class="flou"></div>
+                <p class="textcard">Découverte des gorges insondables avec une équipe pro</p>
+            </div>
+            <div class="activitesItem"  style="background-image: url('images/evenement/triathlon.jpg');">   
+                <div class="flou"></div>
+                <p class="textcard">Ironman de Noël</p>
+            </div>
+        </div>
+
+        <div class="goup" id="goup">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        
+        <footer>
+            <div>
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Nos valeurs</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Parlez nous de votre sport</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

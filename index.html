@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Lukas Gendrot - Étudiant en BTS SIO SISR">
+        <meta name="keywords" content="portfolio, développeur, BTS SIO, SISR, Lukas Gendrot">
+        <meta name="author" content="Lukas Gendrot">
+        <meta name="theme-color" content="#000000">
+        <title>Portfolio - Lukas Gendrot</title>
+        <link rel="preload" href="./asset/css/style.css" as="style">
+        <link rel="preload" href="./asset/fonts/AbrilFatface-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="./asset/fonts/HammersmithOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link href="./asset/css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./asset/img/lg_monogramme_blanc.png" type="image/png">
+        <script defer src="./asset/js/main.js"></script>
+    </head>
+    <body>
+        <div class="language-switch">
+            <label for="language-toggle">
+                <span class="lang-text fr">FR</span>
+                <input type="checkbox" id="language-toggle">
+                <span class="toggle"></span>
+                <span class="lang-text en">EN</span>
+            </label>
+        </div>
+
+        <header>
+            <div id="logo" role="banner">
+                <img src="./asset/img/lg_monogramme_blanc.png" alt="Logo Lukas Gendrot" width="90" height="90" loading="eager">
+            </div>
+            <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger"></span>
+            </button>
+        </header>
+
+        <main id="main-content">
+            <section class="left" aria-labelledby="titreindex">
+                <h1 id="titreindex">Bienvenue sur mon Portfolio</h1>
+                <div id="paragraphe">
+                    <p>Je m'appelle Lukas Gendrot, un étudiant en BTS Services informatiques aux Organisations option solutions d'infrastructure, système et réseaux (SIO SISR). J'ai toujours été passionné de près ou de loin par l'informatique. Je suis une personne très curieuse, toujours en quête de savoir. Si vous souhaitez en apprendre plus sur moi, vous pouvez vous diriger dans la catégorie "À propos de moi".</p>
+                </div>
+            </section>
+
+            <nav id="main-nav" class="right" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="a_propos.html">À propos de moi</a></li>
+                    <li><a href="centre_interet.html">Centres d'intérêt informatiques</a></li>
+                    <li><a href="experience_pro.html">Expériences professionnelles</a></li>
+                    <li><a href="formation.html">Formations</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dossier_examen.html">Dossier examens</a></li>
+                </ul>
+            </nav>
+        </main>
+        
+        <footer>
+            <a href="mention_legal.html" class="legal-link">Mentions légales | Politique de confidentialité</a>
+        </footer>
+
+        <script>
+            // Script pour le changement de langue
+            document.addEventListener('DOMContentLoaded', function() {
+                const languageToggle = document.getElementById('language-toggle');
+                
+                // Vérifier si une préférence de langue est déjà enregistrée
+                const savedLanguage = localStorage.getItem('language');
+                if (savedLanguage === 'en') {
+                    languageToggle.checked = true;
+                }
+                
+                // Gérer le changement de langue
+                languageToggle.addEventListener('change', function() {
+                    if (this.checked) {
+                        // Passer à l'anglais
+                        localStorage.setItem('language', 'en');
+                        window.location.href = 'Portfolio-en/index-en.html';
+                    } else {
+                        // Rester en français
+                        localStorage.setItem('language', 'fr');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

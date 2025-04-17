@@ -1,0 +1,121 @@
+Question 1 (1 point)
+Quelles sont les conditions à réunir pour que 2 matrices soient égales ?
+
+Deux matrices sont égales si :
+Elles ont le même nombre de lignes
+Elles ont le même nombre de colonnes
+Pour des coordonnées i,j données, l’élément est le même dans les deux matrices.
+
+Question 2 (1 point)
+ 
+Quelles sont les caractéristiques de cette matrice ?
+Cette matrice est une matrice carré. Elle comporte des éléments diagonaux et des éléments hors diagonaux. Ceci est aussi une matrice d’identité
+
+Question 3 (1 point)
+Si j’ai deux matrices A et B de mêmes dimensions et que A + B = C avec C matrice nulle, alors que puis-je en déduire de A et B ?
+La matrice A et B sont opposé de l’autre alors B = -A
+
+Question 4 (1 point)
+ 
+Soient les 3 matrices ci-dessus, qu’elles sont les produits que je peux calculer ? (N’oubliez pas les produits carrés) :
+A x B car les matrices A et B ont le même nombre de colonnes.
+A² 
+C x A car les matrices C et A ont le même nombre de lignes.
+Les produits carrés B² et C² ne sont pas possibles en raison des dimensions inadaptées.
+
+Question 5 (1 point)
+Si j’ai deux matrices A et B carrées de même ordre et que A * B = C avec C matrice identité, alors que puis-je en déduire de A et B ?
+
+Ceci montre que la matrice A et B sont inverses entre eux.
+Calcul matriciel :      5 pts
+
+Question 6 (1 point)
+
+On pose :
+ 
+Quelles sont les valeurs des inconnus a, b, c et d ? :
+a = 3
+b = 7
+c = 11
+d = 10
+
+Question 7 (1 point)
+On pose :
+ 
+Quelle est la valeur de l’inconnu y ? :
+
+La valeur de l’inconnu y est 2. 
+Question 8 (1 point)
+On pose :
+
+ 
+Calculer AxB et BxA que peut-on en conclure pour les matrices A et B ?
+
+AxB = (2 5) * (3 -5) = (1 0)    les matrices A et B sont inverses entre eux.
+     (1 3)    (-1 2)     (0 1)
+
+Question 9 (1 point)
+On pose :
+ 
+Quelles sont les valeurs des inconnus a et b ? :
+
+a = 2
+b = 2
+
+Question 10 (1 point)
+On pose :
+ 
+Quelle est la valeur de a ? :
+
+ a = 3
+
+
+
+Question 11 (2 points)
+
+Calculer le nombre de dégâts infligés par chacune des séquences si :
+    F = 30
+    G = 45 
+    A = 50
+Dans ce cas de figure, quelle est la séquence qui va infliger le plus de dégâts ?
+Séquence 1 = 1 x 30 + 2 x 45 + 3 x 50 = 270 de dégâts
+Séquence 2 = 0 x 30 + 1 x 45 + 4 x 50 = 245 de dégâts
+Séquence 3 = 5 x 30 + 6 x 45 + 0 x 50 = 420 de dégâts
+
+La séquence 3 va infliger le plus de dégâts
+Question 12 (2 points)
+
+Les dégâts des différents sorts varient avec l’équipement et les résistances de la cible. Nous aimerions utiliser le calcul matriciel pour déclarer une fois pour toute, les séquences et pouvoir recalculer facilement les dégâts des séquences selon le cas de figure. Nous posons donc :
+    S1 : nombre de dégâts de la séquence 1
+    S2 : nombre de dégâts de la séquence 2
+    S3 : nombre de dégâts de la séquence 3
+Nous définissons S = (█(S1@S2@S3))  et X=(█(F@G@A)). Donner les coefficients de la matrice M tels que M.X = S
+S = (270)    X = (30)
+      (245)           (45)
+      (420)           (50)
+Alors M = (1 2 3) 
+        (0 1 4)
+        (5 6 0)
+Alors M x X = S
+La matrice M représente les séquences des sorts, comme ça on pourra multiplier cette matrice avec la matrice X qui représente les dégâts de chaque sort généré aléatoirement selon la résistance de l’opposant qui donne en résultat la matrice S qui montre les totaux de dégâts de chaque séquence.
+
+Question 13 (1,5 point)
+On pose X=(█(35@40@20)). Calculer S dans ce cas de figure en sachant que M.X = S. Donner la signification des valeurs obtenues.
+M.X = (1 2 3)    x    (35)    =    (175)    =    S
+            (0 1 4)        (40)        (120)
+            (5 6 0)        (20)        (415)
+Les dégâts infligés par la séquence 1 sera de 175.
+Les dégâts infligés par la séquence 2 sera de 120.
+Les dégâts infligés par la séquence 3 sera de 415.
+Question 14 (1,5 points)
+
+Soit P = (■(-24&18&5@20&-15&-4@-5&4&1))
+Calculer M.P.
+Que pouvez-vous en déduire ?
+M.P =     (1 2 3)    x  (-24   18   5)     =    (1 0 0)
+    (0 1 4)        ( 20  -15 -4)            (0 1 0)
+    (5 6 0)        (-5      4   1)            (0 0 1)
+
+Le résultat du produit affiche la matrice d’identité ce qui signifie que M et P sont inverse entre eux.
+bonne chance
+et reformule j'ai pas envie de perdre des points car je t'envoie les reponses
